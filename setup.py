@@ -2,7 +2,6 @@
 '''
 
 from distutils.core import setup
-import numpy as np
 from setuptools import find_packages
 
 CLASSIFIERS = [
@@ -31,7 +30,7 @@ with open('README.md') as fp:
 
 setup(
     name = 'problemo',
-    version = '0.1.1',
+    version = '0.1.2',
     packages = find_packages(),
     install_requires = ['numpy>=1.7',
                         'scipy>=0.13',
@@ -47,5 +46,4 @@ setup(
     classifiers = CLASSIFIERS,
     platforms = ['Windows', 'Linux', 'Solaris', 'Mac OS-X', 'Unix'],
     use_2to3 = False,
-    include_dirs=[np.get_include()],
 )
