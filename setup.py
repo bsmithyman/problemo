@@ -30,10 +30,11 @@ with open('README.md') as fp:
 
 setup(
     name = 'problemo',
-    version = '0.1.2',
+    version = '0.1.3',
     packages = find_packages(),
     install_requires = ['numpy>=1.7',
                         'scipy>=0.13',
+                        'future',
                        ],
     author = 'Brendan Smithyman',
     author_email = 'brendan@bitsmithy.net',
