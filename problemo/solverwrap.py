@@ -36,7 +36,7 @@ except ImportError:
 else:
     active.append('splu')
 
-if not solvers:
+if not active:
     raise ImportError('Problemo: could not load backend')
 
 
